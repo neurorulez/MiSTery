@@ -4,7 +4,7 @@
 
 module mistery_top ( 
 	// clock inputs
-	input wire   [ 2-1:0] CLOCK_27,   // 27 MHz
+	input wire            CLOCK_27,   // 27 MHz
 	// LED outputs
 	output wire           LED,        // LED Yellow
 	// UART
@@ -43,8 +43,13 @@ module mistery_top (
 	input wire            PS2K_CLK,
 	input wire            PS2K_DAT,
 	input wire            PS2M_CLK,
-	input wire            PS2M_DAT
+	input wire            PS2M_DAT,
+	output wire [14:0] DAC_L,
+  	output wire [14:0] DAC_R
 );
+
+assign DAC_L = audio_mix_l;
+assign DAC_R = audio_mix_r;
 
 /* ------------------------------------------------------------------------------ */
 /* ------------------------------- System settings ------------------------------ */
@@ -70,7 +75,7 @@ wire clk_128;
 // 32.084 MHz base clock
 wire mainclock;
 clock32 clock32 (
-	.inclk0     (CLOCK_27[0]),
+	.inclk0     (CLOCK_27),
 	.c0         (mainclock  ),
 	.c1			(SDRAM_CLK  )
 );
@@ -92,7 +97,7 @@ assign SDRAM_CKE = 1'b1;
 // required: 2.4576 MHz
 wire clk_mfp;
 pll_mfp1 pll_mfp1 (
-  .inclk0       (CLOCK_27[0]), // input clock (27MHz)
+  .inclk0       (CLOCK_27), // input clock (27MHz)
   .c0           (clk_mfp    )  // output clock c0 (2.4576MHz)
 );
 

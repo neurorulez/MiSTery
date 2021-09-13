@@ -1,0 +1,1560 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Mon Sep 13 11:05:44 2021
+Info: Command: quartus_sh -t ..//DeMiSTify/Scripts/compile.tcl -project MiSTery -board neptuno
+Info: Quartus(args): -project MiSTery -board neptuno
+Project: MiSTery_neptuno
+Target: neptuno
+Info (293032): Detected changes in source files.
+    Info (293027): Source file: /home/user/MiSTery/mistery_top.sv has changed.
+    Info (293033): A new file was added to the project: /home/user/MiSTery/mist/vidclkcntrl.v.
+    Info (293027): Source file: /home/user/MiSTery/atarist/tg68k.v has changed.
+Info (293032): Detected changes in source files.
+    Info (293027): Source file: /home/user/MiSTery/mistery_top.sv has changed.
+    Info (293033): A new file was added to the project: /home/user/MiSTery/mist/vidclkcntrl.v.
+    Info (293027): Source file: /home/user/MiSTery/atarist/tg68k.v has changed.
+Info (293032): Detected changes in source files.
+    Info (293027): Source file: /home/user/MiSTery/mistery_top.sv has changed.
+    Info (293033): A new file was added to the project: /home/user/MiSTery/mist/vidclkcntrl.v.
+    Info (293027): Source file: /home/user/MiSTery/atarist/tg68k.v has changed.
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Mon Sep 13 11:05:45 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MiSTery_neptuno -c MiSTery_neptuno
+Info (20029): Only one processor detected - disabling parallel compilation
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/joydecoder.v
+    Info (12023): Found entity 1: joydecoder File: /home/user/MiSTery/neptuno/rtl/joydecoder.v Line: 24
+Info (12021): Found 4 design units, including 2 entities, in source file rtl/audio_i2s.vhd
+    Info (12022): Found design unit 1: dac_if-Behavioral File: /home/user/MiSTery/neptuno/rtl/audio_i2s.vhd Line: 34
+    Info (12022): Found design unit 2: audio_top-Behavioral File: /home/user/MiSTery/neptuno/rtl/audio_i2s.vhd Line: 97
+    Info (12023): Found entity 1: dac_if File: /home/user/MiSTery/neptuno/rtl/audio_i2s.vhd Line: 24
+    Info (12023): Found entity 2: audio_top File: /home/user/MiSTery/neptuno/rtl/audio_i2s.vhd Line: 85
+Info (12021): Found 0 design units, including 0 entities, in source file /home/user/MiSTery/demistify_defs.v
+Warning (12019): Can't analyze file -- file chameleon64v2_top.vhd is missing
+Info (12021): Found 1 design units, including 1 entities, in source file clock32.v
+    Info (12023): Found entity 1: clock32 File: /home/user/MiSTery/neptuno/clock32.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file clock.v
+    Info (12023): Found entity 1: clock File: /home/user/MiSTery/neptuno/clock.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file pll_mfp1.v
+    Info (12023): Found entity 1: pll_mfp1 File: /home/user/MiSTery/neptuno/pll_mfp1.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mistery_top.sv
+    Info (12023): Found entity 1: mistery_top File: /home/user/MiSTery/mistery_top.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/sigma_delta_dac.v
+    Info (12023): Found entity 1: sigma_delta_dac File: /home/user/MiSTery/mist/sigma_delta_dac.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/user_io.v
+    Info (12023): Found entity 1: user_io File: /home/user/MiSTery/mist/user_io.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/data_io.v
+    Info (12023): Found entity 1: data_io File: /home/user/MiSTery/mist/data_io.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/mist_video.v
+    Info (12023): Found entity 1: mist_video File: /home/user/MiSTery/mist/mist_video.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/scandoubler.v
+    Info (12023): Found entity 1: scandoubler File: /home/user/MiSTery/mist/scandoubler.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/osd.v
+    Info (12023): Found entity 1: osd File: /home/user/MiSTery/mist/osd.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/cofi.sv
+    Info (12023): Found entity 1: cofi File: /home/user/MiSTery/mist/cofi.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/mist/rgb2ypbpr.v
+    Info (12023): Found entity 1: RGBtoYPbPr File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 5
+Warning (12136): Clear box output file /home/user/MiSTery/mist/vidclkcntrl.v is not compatible with the current compile. Used regenerated output file /home/user/MiSTery/neptuno/db/vidclkcntrl.v for elaboration
+Info (12021): Found 2 design units, including 2 entities, in source file db/vidclkcntrl.v
+    Info (12023): Found entity 1: vidclkcntrl_altclkctrl_uhi File: /home/user/MiSTery/neptuno/db/vidclkcntrl.v Line: 46
+    Info (12023): Found entity 2: vidclkcntrl File: /home/user/MiSTery/neptuno/db/vidclkcntrl.v Line: 97
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/atarist/YM2149.vhd
+    Info (12022): Found design unit 1: YM2149-RTL File: /home/user/MiSTery/atarist/YM2149.vhd Line: 106
+    Info (12023): Found entity 1: YM2149 File: /home/user/MiSTery/atarist/YM2149.vhd Line: 63
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/atarist/vol_table_array.vhd
+    Info (12022): Found design unit 1: vol_table-RTL File: /home/user/MiSTery/atarist/vol_table_array.vhd Line: 19
+    Info (12023): Found entity 1: vol_table File: /home/user/MiSTery/atarist/vol_table_array.vhd Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/viking.v
+    Info (12023): Found entity 1: viking File: /home/user/MiSTery/atarist/viking.v Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/ste_joypad.v
+    Info (12023): Found entity 1: ste_joypad File: /home/user/MiSTery/atarist/ste_joypad.v Line: 1
+Info (12021): Found 5 design units, including 5 entities, in source file /home/user/MiSTery/atarist/stBlitter.sv
+    Info (12023): Found entity 1: stBlitter File: /home/user/MiSTery/atarist/stBlitter.sv Line: 40
+    Info (12023): Found entity 2: bltBusCtrl File: /home/user/MiSTery/atarist/stBlitter.sv Line: 318
+    Info (12023): Found entity 3: bltControl File: /home/user/MiSTery/atarist/stBlitter.sv Line: 432
+    Info (12023): Found entity 4: bltCounters File: /home/user/MiSTery/atarist/stBlitter.sv Line: 516
+    Info (12023): Found entity 5: bltScore File: /home/user/MiSTery/atarist/stBlitter.sv Line: 635
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/sdram.v
+    Info (12023): Found entity 1: sdram File: /home/user/MiSTery/atarist/sdram.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/mste_ctrl.v
+    Info (12023): Found entity 1: mste_ctrl File: /home/user/MiSTery/atarist/mste_ctrl.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/mfp.v
+    Info (12023): Found entity 1: mfp File: /home/user/MiSTery/atarist/mfp.v Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/mfp_timer.v
+    Info (12023): Found entity 1: mfp_timer File: /home/user/MiSTery/atarist/mfp_timer.v Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/mfp_srff16.v
+    Info (12023): Found entity 1: mfp_srff16 File: /home/user/MiSTery/atarist/mfp_srff16.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/mfp_hbit16.v
+    Info (12023): Found entity 1: mfp_hbit16 File: /home/user/MiSTery/atarist/mfp_hbit16.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/io_fifo.v
+    Info (12023): Found entity 1: io_fifo File: /home/user/MiSTery/atarist/io_fifo.v Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/ethernec.v
+    Info (12023): Found entity 1: ethernec File: /home/user/MiSTery/atarist/ethernec.v Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/dma.v
+    Info (12023): Found entity 1: dma File: /home/user/MiSTery/atarist/dma.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/atarist_sdram.sv
+    Info (12023): Found entity 1: atarist_sdram File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/acsi.v
+    Info (12023): Found entity 1: acsi File: /home/user/MiSTery/atarist/acsi.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/acia.v
+    Info (12023): Found entity 1: acia File: /home/user/MiSTery/atarist/acia.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/atarist/tg68k.v
+    Info (12023): Found entity 1: tg68k File: /home/user/MiSTery/atarist/tg68k.v Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/TG68K.C/TG68KdotC_Kernel.vhd
+    Info (12022): Found design unit 1: TG68KdotC_Kernel-logic File: /home/user/MiSTery/TG68K.C/TG68KdotC_Kernel.vhd Line: 145
+    Info (12023): Found entity 1: TG68KdotC_Kernel File: /home/user/MiSTery/TG68K.C/TG68KdotC_Kernel.vhd Line: 107
+Info (12021): Found 1 design units, including 0 entities, in source file /home/user/MiSTery/TG68K.C/TG68K_Pack.vhd
+    Info (12022): Found design unit 1: TG68K_Pack File: /home/user/MiSTery/TG68K.C/TG68K_Pack.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/TG68K.C/TG68K_ALU.vhd
+    Info (12022): Found design unit 1: TG68K_ALU-logic File: /home/user/MiSTery/TG68K.C/TG68K_ALU.vhd Line: 80
+    Info (12023): Found entity 1: TG68K_ALU File: /home/user/MiSTery/TG68K.C/TG68K_ALU.vhd Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/fx68k/uaddrPla.sv
+    Info (12023): Found entity 1: pla_lined File: /home/user/MiSTery/fx68k/uaddrPla.sv Line: 41
+Info (12021): Found 6 design units, including 6 entities, in source file /home/user/MiSTery/fx68k/fx68kAlu.sv
+    Info (12023): Found entity 1: fx68kAlu File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 31
+    Info (12023): Found entity 2: aluCorf File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 457
+    Info (12023): Found entity 3: aluShifter File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 492
+    Info (12023): Found entity 4: aluGetOp File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 527
+    Info (12023): Found entity 5: rowDecoder File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 624
+    Info (12023): Found entity 6: ccrTable File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 758
+Info (12021): Found 14 design units, including 14 entities, in source file /home/user/MiSTery/fx68k/fx68k.sv
+    Info (12023): Found entity 1: fx68k File: /home/user/MiSTery/fx68k/fx68k.sv Line: 142
+    Info (12023): Found entity 2: nDecoder3 File: /home/user/MiSTery/fx68k/fx68k.sv Line: 664
+    Info (12023): Found entity 3: irdDecode File: /home/user/MiSTery/fx68k/fx68k.sv Line: 944
+    Info (12023): Found entity 4: excUnit File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1156
+    Info (12023): Found entity 5: dataIo File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1802
+    Info (12023): Found entity 6: uaddrDecode File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1902
+    Info (12023): Found entity 7: onehotEncoder4 File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1987
+    Info (12023): Found entity 8: pren File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2014
+    Info (12023): Found entity 9: sequencer File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2038
+    Info (12023): Found entity 10: busArbiter File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2279
+    Info (12023): Found entity 11: busControl File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2363
+    Info (12023): Found entity 12: uRom File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2569
+    Info (12023): Found entity 13: nanoRom File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2580
+    Info (12023): Found entity 14: microToNanoAddr File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2591
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/fx68k/altera_regs.v
+    Info (12023): Found entity 1: altera_regs File: /home/user/MiSTery/fx68k/altera_regs.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/shifter_video.v
+    Info (12023): Found entity 1: shifter_video File: /home/user/MiSTery/gstmcu/hdl/shifter_video.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/register.v
+    Info (12023): Found entity 1: register File: /home/user/MiSTery/gstmcu/hdl/register.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/mcucontrol.v
+    Info (12023): Found entity 1: mcucontrol File: /home/user/MiSTery/gstmcu/hdl/mcucontrol.v Line: 3
+Warning (12090): Entity "mlatch" obtained from "../gstmcu/hdl/latch.v" instead of from Quartus Prime megafunction library File: /home/user/MiSTery/gstmcu/hdl/latch.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/latch.v
+    Info (12023): Found entity 1: mlatch File: /home/user/MiSTery/gstmcu/hdl/latch.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/gstshifter.v
+    Info (12023): Found entity 1: gstshifter File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/gstmcu.v
+    Info (12023): Found entity 1: gstmcu File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/gstmcu/hdl/clockgen.v
+    Info (12023): Found entity 1: clockgen File: /home/user/MiSTery/gstmcu/hdl/clockgen.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/fdc1772/floppy.v
+    Info (12023): Found entity 1: floppy File: /home/user/MiSTery/fdc1772/floppy.v Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file /home/user/MiSTery/fdc1772/fdc1772.v
+    Info (12023): Found entity 1: fdc1772 File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 24
+    Info (12023): Found entity 2: fdc1772_dpram File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 1043
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/ps2.sv
+    Info (12023): Found entity 1: ps2 File: /home/user/MiSTery/ikbd/ps2.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/ikbd.sv
+    Info (12023): Found entity 1: ikbd File: /home/user/MiSTery/ikbd/ikbd.sv Line: 7
+Warning (10229): Verilog HDL Expression warning at HD63701.v(206): truncated literal to match 3 bits File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 206
+Warning (10229): Verilog HDL Expression warning at HD63701.v(208): truncated literal to match 3 bits File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 208
+Info (12021): Found 6 design units, including 6 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701.v
+    Info (12023): Found entity 1: HD63701V0_M6 File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 5
+    Info (12023): Found entity 2: HD63701_BIDSEL File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 95
+    Info (12023): Found entity 3: HD63701_BIRAM File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 118
+    Info (12023): Found entity 4: HD63701_IOPort File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 140
+    Info (12023): Found entity 5: HD63701_SCI File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 217
+    Info (12023): Found entity 6: HD63701_Timer File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 370
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701_SEQ.v
+    Info (12023): Found entity 1: HD63701_SEQ File: /home/user/MiSTery/ikbd/hd63701/HD63701_SEQ.v Line: 8
+Info (12021): Found 11 design units, including 11 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v
+    Info (12023): Found entity 1: HD63701_MCROM File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 6
+    Info (12023): Found entity 2: HD63701_MCROM_S0 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 64
+    Info (12023): Found entity 3: HD63701_MCROM_S1 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 69
+    Info (12023): Found entity 4: HD63701_MCROM_S2 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 74
+    Info (12023): Found entity 5: HD63701_MCROM_S3 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 79
+    Info (12023): Found entity 6: HD63701_MCROM_S4 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 84
+    Info (12023): Found entity 7: HD63701_MCROM_S5 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 89
+    Info (12023): Found entity 8: HD63701_MCROM_S6 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 94
+    Info (12023): Found entity 9: HD63701_MCROM_S7 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 99
+    Info (12023): Found entity 10: HD63701_MCROM_S8 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 104
+    Info (12023): Found entity 11: HD63701_MCROM_S9 File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 109
+Info (12021): Found 3 design units, including 3 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v
+    Info (12023): Found entity 1: HD63701_EXEC File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 7
+    Info (12023): Found entity 2: HD63701_DSEL13 File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 174
+    Info (12023): Found entity 3: HD63701_DSEL8 File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 212
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701_CORE.v
+    Info (12023): Found entity 1: HD63701_Core File: /home/user/MiSTery/ikbd/hd63701/HD63701_CORE.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/hd63701/HD63701_ALU.v
+    Info (12023): Found entity 1: HD63701_ALU File: /home/user/MiSTery/ikbd/hd63701/HD63701_ALU.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /home/user/MiSTery/ikbd/rom/MCU_BIROM.v
+    Info (12023): Found entity 1: MCU_BIROM File: /home/user/MiSTery/ikbd/rom/MCU_BIROM.v Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd
+    Info (12022): Found design unit 1: substitute_mcu-rtl File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 79
+    Info (12023): Found entity 1: substitute_mcu File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 24
+Info (12021): Found 1 design units, including 0 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_pkg.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_pkg File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_pkg.vhd Line: 22
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_alu-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 50
+    Info (12023): Found entity 1: eightthirtytwo_alu File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_shifter.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_shifter-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_shifter.vhd Line: 45
+    Info (12023): Found entity 1: eightthirtytwo_shifter File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_shifter.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_aligner-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner.vhd Line: 36
+    Info (12023): Found entity 1: eightthirtytwo_aligner File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner.vhd Line: 23
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner_le.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_aligner_le-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner_le.vhd Line: 38
+    Info (12023): Found entity 1: eightthirtytwo_aligner_le File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_aligner_le.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_decode.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_decode-behavoural File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_decode.vhd Line: 38
+    Info (12023): Found entity 1: eightthirtytwo_decode File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_decode.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_fetchloadstore-behavioural File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 79
+    Info (12023): Found entity 1: eightthirtytwo_fetchloadstore File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 28
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_hazard.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_hazard-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_hazard.vhd Line: 60
+    Info (12023): Found entity 1: eightthirtytwo_hazard File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_hazard.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_debug.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_debug-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_debug.vhd Line: 53
+    Info (12023): Found entity 1: eightthirtytwo_debug File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_debug.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd
+    Info (12022): Found design unit 1: eightthirtytwo_cpu-behavoural File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 59
+    Info (12023): Found entity 1: eightthirtytwo_cpu File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_bridge_jtag.vhd
+    Info (12022): Found design unit 1: debug_bridge_jtag-rtl File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_bridge_jtag.vhd Line: 36
+    Info (12023): Found entity 1: debug_bridge_jtag File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_bridge_jtag.vhd Line: 24
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_virtualjtag.vhd
+    Info (12022): Found design unit 1: debug_virtualjtag-SYN File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_virtualjtag.vhd Line: 62
+    Info (12023): Found entity 1: debug_virtualjtag File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_virtualjtag.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_fifo_altera.vhd
+    Info (12022): Found design unit 1: debug_fifo_altera-SYN File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_fifo_altera.vhd Line: 58
+    Info (12023): Found entity 1: debug_fifo_altera File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/debug_fifo_altera.vhd Line: 42
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/firmware/controller_rom.vhd
+    Info (12022): Found design unit 1: controller_rom-arch File: /home/user/MiSTery/DeMiSTify/firmware/controller_rom.vhd Line: 23
+    Info (12023): Found entity 1: controller_rom File: /home/user/MiSTery/DeMiSTify/firmware/controller_rom.vhd Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/simple_uart.vhd
+    Info (12022): Found design unit 1: simple_uart-rtl File: /home/user/MiSTery/DeMiSTify/controller/simple_uart.vhd Line: 53
+    Info (12023): Found entity 1: simple_uart File: /home/user/MiSTery/DeMiSTify/controller/simple_uart.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/jtag_uart.vhd
+    Info (12022): Found design unit 1: jtag_uart-rtl File: /home/user/MiSTery/DeMiSTify/controller/jtag_uart.vhd Line: 35
+    Info (12023): Found entity 1: jtag_uart File: /home/user/MiSTery/DeMiSTify/controller/jtag_uart.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/io_ps2_com.vhd
+    Info (12022): Found design unit 1: io_ps2_com-rtl File: /home/user/MiSTery/DeMiSTify/controller/io_ps2_com.vhd Line: 80
+    Info (12023): Found entity 1: io_ps2_com File: /home/user/MiSTery/DeMiSTify/controller/io_ps2_com.vhd Line: 54
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/interrupt_controller.vhd
+    Info (12022): Found design unit 1: interrupt_controller-rtl File: /home/user/MiSTery/DeMiSTify/controller/interrupt_controller.vhd Line: 35
+    Info (12023): Found entity 1: interrupt_controller File: /home/user/MiSTery/DeMiSTify/controller/interrupt_controller.vhd Line: 21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/timer_controller.vhd
+    Info (12022): Found design unit 1: timer_controller-rtl File: /home/user/MiSTery/DeMiSTify/controller/timer_controller.vhd Line: 43
+    Info (12023): Found entity 1: timer_controller File: /home/user/MiSTery/DeMiSTify/controller/timer_controller.vhd Line: 25
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/DeMiSTify/controller/spi_controller.vhd
+    Info (12022): Found design unit 1: spi_controller-rtl File: /home/user/MiSTery/DeMiSTify/controller/spi_controller.vhd Line: 43
+    Info (12023): Found entity 1: spi_controller File: /home/user/MiSTery/DeMiSTify/controller/spi_controller.vhd Line: 23
+Info (12021): Found 1 design units, including 0 entities, in source file /home/user/MiSTery/demistify_config_pkg.vhd
+    Info (12022): Found design unit 1: demistify_config_pkg File: /home/user/MiSTery/demistify_config_pkg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/firmware/controller_rom1_byte.vhd
+    Info (12022): Found design unit 1: controller_rom1-rtl File: /home/user/MiSTery/firmware/controller_rom1_byte.vhd Line: 23
+    Info (12023): Found entity 1: controller_rom1 File: /home/user/MiSTery/firmware/controller_rom1_byte.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/user/MiSTery/firmware/controller_rom2_byte.vhd
+    Info (12022): Found design unit 1: controller_rom2-rtl File: /home/user/MiSTery/firmware/controller_rom2_byte.vhd Line: 23
+    Info (12023): Found entity 1: controller_rom2 File: /home/user/MiSTery/firmware/controller_rom2_byte.vhd Line: 6
+Warning (12125): Using design file neptuno_top.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: neptuno_top-RTL File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 63
+    Info (12023): Found entity 1: neptuno_top File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 7
+Info (12127): Elaborating entity "neptuno_top" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at neptuno_top.vhd(40): used explicit default value for signal "joyP7_o" because signal was never assigned a value File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 40
+Warning (10540): VHDL Signal Declaration warning at neptuno_top.vhd(50): used explicit default value for signal "stm_rx_o" because signal was never assigned a value File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 50
+Warning (10036): Verilog HDL or VHDL warning at neptuno_top.vhd(69): object "reset_n" assigned a value but never read File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 69
+Warning (10036): Verilog HDL or VHDL warning at neptuno_top.vhd(86): object "spi_ss4" assigned a value but never read File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 86
+Warning (10541): VHDL Signal Declaration warning at neptuno_top.vhd(111): used implicit default value for signal "rs232_rxd" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 111
+Warning (10036): Verilog HDL or VHDL warning at neptuno_top.vhd(112): object "rs232_txd" assigned a value but never read File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 112
+Warning (10036): Verilog HDL or VHDL warning at neptuno_top.vhd(214): object "i2s_mclk" assigned a value but never read File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 214
+Info (12128): Elaborating entity "audio_top" for hierarchy "audio_top:audio_i2s" File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 260
+Info (12128): Elaborating entity "dac_if" for hierarchy "audio_top:audio_i2s|dac_if:dac" File: /home/user/MiSTery/neptuno/rtl/audio_i2s.vhd Line: 147
+Info (12128): Elaborating entity "joydecoder" for hierarchy "joydecoder:joy" File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 272
+Info (12128): Elaborating entity "mistery_top" for hierarchy "mistery_top:guest" File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 292
+Info (12128): Elaborating entity "clock32" for hierarchy "mistery_top:guest|clock32:clock32" File: /home/user/MiSTery/mistery_top.sv Line: 81
+Info (12128): Elaborating entity "altpll" for hierarchy "mistery_top:guest|clock32:clock32|altpll:altpll_component" File: /home/user/MiSTery/neptuno/clock32.v Line: 107
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|clock32:clock32|altpll:altpll_component" File: /home/user/MiSTery/neptuno/clock32.v Line: 107
+Info (12133): Instantiated megafunction "mistery_top:guest|clock32:clock32|altpll:altpll_component" with the following parameter: File: /home/user/MiSTery/neptuno/clock32.v Line: 107
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "25"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "16"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "clk1_divide_by" = "25"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "48"
+    Info (12134): Parameter "clk1_phase_shift" = "-2000"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "Cyclone 10 LP"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=clock32"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/clock32_altpll.v
+    Info (12023): Found entity 1: clock32_altpll File: /home/user/MiSTery/neptuno/db/clock32_altpll.v Line: 30
+Info (12128): Elaborating entity "clock32_altpll" for hierarchy "mistery_top:guest|clock32:clock32|altpll:altpll_component|clock32_altpll:auto_generated" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "clock" for hierarchy "mistery_top:guest|clock:clock" File: /home/user/MiSTery/mistery_top.sv Line: 91
+Info (12128): Elaborating entity "altpll" for hierarchy "mistery_top:guest|clock:clock|altpll:altpll_component" File: /home/user/MiSTery/neptuno/clock.v Line: 119
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|clock:clock|altpll:altpll_component" File: /home/user/MiSTery/neptuno/clock.v Line: 119
+Info (12133): Instantiated megafunction "mistery_top:guest|clock:clock|altpll:altpll_component" with the following parameter: File: /home/user/MiSTery/neptuno/clock.v Line: 119
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "3"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "clk1_divide_by" = "1"
+    Info (12134): Parameter "clk1_duty_cycle" = "50"
+    Info (12134): Parameter "clk1_multiply_by" = "1"
+    Info (12134): Parameter "clk1_phase_shift" = "0"
+    Info (12134): Parameter "clk2_divide_by" = "1"
+    Info (12134): Parameter "clk2_duty_cycle" = "50"
+    Info (12134): Parameter "clk2_multiply_by" = "4"
+    Info (12134): Parameter "clk2_phase_shift" = "0"
+    Info (12134): Parameter "clk3_divide_by" = "16"
+    Info (12134): Parameter "clk3_duty_cycle" = "50"
+    Info (12134): Parameter "clk3_multiply_by" = "1"
+    Info (12134): Parameter "clk3_phase_shift" = "0"
+    Info (12134): Parameter "clk4_divide_by" = "1"
+    Info (12134): Parameter "clk4_duty_cycle" = "50"
+    Info (12134): Parameter "clk4_multiply_by" = "3"
+    Info (12134): Parameter "clk4_phase_shift" = "-1500"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "31250"
+    Info (12134): Parameter "intended_device_family" = "Cyclone 10 LP"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=clock"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_USED"
+    Info (12134): Parameter "port_clk2" = "PORT_USED"
+    Info (12134): Parameter "port_clk3" = "PORT_USED"
+    Info (12134): Parameter "port_clk4" = "PORT_USED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/clock_altpll.v
+    Info (12023): Found entity 1: clock_altpll File: /home/user/MiSTery/neptuno/db/clock_altpll.v Line: 30
+Info (12128): Elaborating entity "clock_altpll" for hierarchy "mistery_top:guest|clock:clock|altpll:altpll_component|clock_altpll:auto_generated" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "pll_mfp1" for hierarchy "mistery_top:guest|pll_mfp1:pll_mfp1" File: /home/user/MiSTery/mistery_top.sv Line: 102
+Info (12128): Elaborating entity "altpll" for hierarchy "mistery_top:guest|pll_mfp1:pll_mfp1|altpll:altpll_component" File: /home/user/MiSTery/neptuno/pll_mfp1.v Line: 103
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|pll_mfp1:pll_mfp1|altpll:altpll_component" File: /home/user/MiSTery/neptuno/pll_mfp1.v Line: 103
+Info (12133): Instantiated megafunction "mistery_top:guest|pll_mfp1:pll_mfp1|altpll:altpll_component" with the following parameter: File: /home/user/MiSTery/neptuno/pll_mfp1.v Line: 103
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "15625"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "768"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=pll_mfp1"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/pll_mfp1_altpll.v
+    Info (12023): Found entity 1: pll_mfp1_altpll File: /home/user/MiSTery/neptuno/db/pll_mfp1_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_mfp1_altpll" for hierarchy "mistery_top:guest|pll_mfp1:pll_mfp1|altpll:altpll_component|pll_mfp1_altpll:auto_generated" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "vidclkcntrl" for hierarchy "mistery_top:guest|vidclkcntrl:vidclkcntrl" File: /home/user/MiSTery/mistery_top.sv Line: 124
+Info (12128): Elaborating entity "vidclkcntrl_altclkctrl_uhi" for hierarchy "mistery_top:guest|vidclkcntrl:vidclkcntrl|vidclkcntrl_altclkctrl_uhi:vidclkcntrl_altclkctrl_uhi_component" File: /home/user/MiSTery/neptuno/db/vidclkcntrl.v Line: 130
+Info (12128): Elaborating entity "mist_video" for hierarchy "mistery_top:guest|mist_video:mist_video" File: /home/user/MiSTery/mistery_top.sv Line: 154
+Info (12128): Elaborating entity "scandoubler" for hierarchy "mistery_top:guest|mist_video:mist_video|scandoubler:scandoubler" File: /home/user/MiSTery/mist/mist_video.v Line: 81
+Info (12128): Elaborating entity "osd" for hierarchy "mistery_top:guest|mist_video:mist_video|osd:osd" File: /home/user/MiSTery/mist/mist_video.v Line: 103
+Info (12128): Elaborating entity "cofi" for hierarchy "mistery_top:guest|mist_video:mist_video|cofi:cofi" File: /home/user/MiSTery/mist/mist_video.v Line: 123
+Info (12128): Elaborating entity "RGBtoYPbPr" for hierarchy "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr" File: /home/user/MiSTery/mist/mist_video.v Line: 145
+Info (12128): Elaborating entity "sigma_delta_dac" for hierarchy "mistery_top:guest|sigma_delta_dac:sigma_delta_dac" File: /home/user/MiSTery/mistery_top.sv Line: 168
+Warning (10230): Verilog HDL assignment warning at sigma_delta_dac.v(72): truncated value with size 20 to match size of target (19) File: /home/user/MiSTery/mist/sigma_delta_dac.v Line: 72
+Warning (10230): Verilog HDL assignment warning at sigma_delta_dac.v(73): truncated value with size 20 to match size of target (19) File: /home/user/MiSTery/mist/sigma_delta_dac.v Line: 73
+Warning (10230): Verilog HDL assignment warning at sigma_delta_dac.v(75): truncated value with size 20 to match size of target (19) File: /home/user/MiSTery/mist/sigma_delta_dac.v Line: 75
+Warning (10230): Verilog HDL assignment warning at sigma_delta_dac.v(76): truncated value with size 20 to match size of target (19) File: /home/user/MiSTery/mist/sigma_delta_dac.v Line: 76
+Info (12128): Elaborating entity "io_fifo" for hierarchy "mistery_top:guest|io_fifo:serial_out_fifo" File: /home/user/MiSTery/mistery_top.sv Line: 195
+Info (12128): Elaborating entity "data_io" for hierarchy "mistery_top:guest|data_io:data_io" File: /home/user/MiSTery/mistery_top.sv Line: 276
+Warning (10230): Verilog HDL assignment warning at data_io.v(258): truncated value with size 24 to match size of target (23) File: /home/user/MiSTery/mist/data_io.v Line: 258
+Warning (10230): Verilog HDL assignment warning at data_io.v(259): truncated value with size 24 to match size of target (23) File: /home/user/MiSTery/mist/data_io.v Line: 259
+Warning (10230): Verilog HDL assignment warning at data_io.v(260): truncated value with size 24 to match size of target (23) File: /home/user/MiSTery/mist/data_io.v Line: 260
+Info (12128): Elaborating entity "user_io" for hierarchy "mistery_top:guest|user_io:user_io" File: /home/user/MiSTery/mistery_top.sv Line: 433
+Info (12128): Elaborating entity "atarist_sdram" for hierarchy "mistery_top:guest|atarist_sdram:atarist" File: /home/user/MiSTery/mistery_top.sv Line: 584
+Warning (10935): Verilog HDL Casex/Casez warning at atarist_sdram.sv(925): casex/casez item expression overlaps with a previous casex/casez item expression File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 925
+Info (12128): Elaborating entity "gstmcu" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 362
+Warning (10036): Verilog HDL or VHDL warning at gstmcu.v(747): object "sndclk" assigned a value but never read File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 747
+Info (12128): Elaborating entity "register" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|register:hintb_r" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 304
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:noscroll_l" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 324
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:hoff_l" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 385
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:lvd_ll" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 387
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:conf_l" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 392
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:sfb_hl" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 420
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mlatch:sctl_l" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 421
+Info (12128): Elaborating entity "clockgen" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|clockgen:clockgen_s" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 650
+Info (12128): Elaborating entity "mcucontrol" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstmcu:gstmcu|mcucontrol:mcucontrol" File: /home/user/MiSTery/gstmcu/hdl/gstmcu.v Line: 742
+Warning (10036): Verilog HDL or VHDL warning at mcucontrol.v(54): object "c1_rise" assigned a value but never read File: /home/user/MiSTery/gstmcu/hdl/mcucontrol.v Line: 54
+Info (12128): Elaborating entity "gstshifter" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 397
+Warning (10036): Verilog HDL or VHDL warning at gstshifter.v(319): object "mw_clk" assigned a value but never read File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 319
+Warning (10036): Verilog HDL or VHDL warning at gstshifter.v(320): object "mw_data" assigned a value but never read File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 320
+Warning (10036): Verilog HDL or VHDL warning at gstshifter.v(321): object "mw_done" assigned a value but never read File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 321
+Info (12128): Elaborating entity "mlatch" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|mlatch:dout_l" File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 63
+Info (12128): Elaborating entity "shifter_video" for hierarchy "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|shifter_video:shifter_video" File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 229
+Info (12128): Elaborating entity "viking" for hierarchy "mistery_top:guest|atarist_sdram:atarist|viking:viking" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 446
+Info (12128): Elaborating entity "fx68k" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 533
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(272): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 272
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(273): truncated value with size 32 to match size of target (9) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 273
+Info (12128): Elaborating entity "microToNanoAddr" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|microToNanoAddr:microToNanoAddr" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 259
+Info (12128): Elaborating entity "nanoRom" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 263
+Warning (10030): Net "nRam.data_a" at fx68k.sv(2581) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2581
+Warning (10030): Net "nRam.waddr_a" at fx68k.sv(2581) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2581
+Warning (10030): Net "nRam.we_a" at fx68k.sv(2581) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2581
+Info (12128): Elaborating entity "uRom" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uRom:uRom" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 264
+Warning (10030): Net "uRam.data_a" at fx68k.sv(2570) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2570
+Warning (10030): Net "uRam.waddr_a" at fx68k.sv(2570) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2570
+Warning (10030): Net "uRam.we_a" at fx68k.sv(2570) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2570
+Info (12128): Elaborating entity "uaddrDecode" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uaddrDecode:uaddrDecode" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 358
+Info (10264): Verilog HDL Case Statement information at fx68k.sv(1957): all case item expressions in this case statement are onehot File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1957
+Info (12128): Elaborating entity "onehotEncoder4" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uaddrDecode:uaddrDecode|onehotEncoder4:irLineDecod" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1911
+Info (12128): Elaborating entity "pla_lined" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uaddrDecode:uaddrDecode|pla_lined:pla_lined" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1918
+Warning (10230): Verilog HDL assignment warning at uaddrPla.sv(88): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/uaddrPla.sv Line: 88
+Warning (10230): Verilog HDL assignment warning at uaddrPla.sv(90): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/uaddrPla.sv Line: 90
+Warning (10230): Verilog HDL assignment warning at uaddrPla.sv(129): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/uaddrPla.sv Line: 129
+Warning (10230): Verilog HDL assignment warning at uaddrPla.sv(133): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/uaddrPla.sv Line: 133
+Info (12128): Elaborating entity "sequencer" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|sequencer:sequencer" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 364
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2070): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2070
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2072): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2072
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2074): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2074
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2236): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2236
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2244): truncated value with size 32 to match size of target (4) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2244
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2249): truncated value with size 32 to match size of target (4) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2249
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2250): truncated value with size 32 to match size of target (10) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2250
+Info (12128): Elaborating entity "excUnit" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 369
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1307): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1307
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1312): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1312
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1317): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1317
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1330): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1330
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1341): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1341
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(1349): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1349
+Info (12128): Elaborating entity "pren" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|pren:rmPren" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1720
+Warning (10230): Verilog HDL assignment warning at fx68k.sv(2028): truncated value with size 32 to match size of target (4) File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2028
+Info (12128): Elaborating entity "dataIo" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|dataIo:dataIo" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1779
+Info (12128): Elaborating entity "fx68kAlu" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 1789
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(313): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 313
+Info (12128): Elaborating entity "rowDecoder" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu|rowDecoder:rowDecoder" File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 99
+Info (12128): Elaborating entity "aluGetOp" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu|aluGetOp:aluGetOp" File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 106
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(533): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 533
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(534): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 534
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(540): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 540
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(541): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 541
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(542): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 542
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(539): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 539
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(547): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 547
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(548): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 548
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(549): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 549
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(546): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 546
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(554): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 554
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(555): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 555
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(556): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 556
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(553): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 553
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(560): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 560
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(565): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 565
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(566): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 566
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(567): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 567
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(564): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 564
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(572): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 572
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(573): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 573
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(574): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 574
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(571): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 571
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(581): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 581
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(582): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 582
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(583): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 583
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(580): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 580
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(588): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 588
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(589): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 589
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(590): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 590
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(587): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 587
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(595): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 595
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(596): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 596
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(597): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 597
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(594): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 594
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(602): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 602
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(603): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 603
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(604): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 604
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(601): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 601
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(607): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 607
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(608): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 608
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(609): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 609
+Warning (10230): Verilog HDL assignment warning at fx68kAlu.sv(610): truncated value with size 32 to match size of target (5) File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 610
+Warning (10763): Verilog HDL warning at fx68kAlu.sv(537): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 537
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(537): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 537
+Info (12128): Elaborating entity "ccrTable" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu|ccrTable:ccrTable" File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 107
+Warning (10763): Verilog HDL warning at fx68kAlu.sv(785): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 785
+Warning (10958): SystemVerilog warning at fx68kAlu.sv(785): unique or priority keyword makes case statement complete File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 785
+Info (10264): Verilog HDL Case Statement information at fx68kAlu.sv(809): all case item expressions in this case statement are onehot File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 809
+Info (12128): Elaborating entity "aluShifter" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu|aluShifter:shifter" File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 167
+Info (12128): Elaborating entity "aluCorf" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|excUnit:excUnit|fx68kAlu:alu|aluCorf:aluCorf" File: /home/user/MiSTery/fx68k/fx68kAlu.sv Line: 173
+Info (12128): Elaborating entity "nDecoder3" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nDecoder3:nDecoder" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 371
+Info (12128): Elaborating entity "irdDecode" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|irdDecode:irdDecode" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 373
+Info (12128): Elaborating entity "busControl" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|busControl:busControl" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 379
+Warning (10036): Verilog HDL or VHDL warning at fx68k.sv(2384): object "dataOe" assigned a value but never read File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2384
+Info (12128): Elaborating entity "busArbiter" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|busArbiter:busArbiter" File: /home/user/MiSTery/fx68k/fx68k.sv Line: 381
+Info (10264): Verilog HDL Case Statement information at fx68k.sv(2333): all case item expressions in this case statement are onehot File: /home/user/MiSTery/fx68k/fx68k.sv Line: 2333
+Info (12128): Elaborating entity "tg68k" for hierarchy "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 577
+Info (12128): Elaborating entity "TG68KdotC_Kernel" for hierarchy "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k" File: /home/user/MiSTery/atarist/tg68k.v Line: 211
+Info (12128): Elaborating entity "TG68K_ALU" for hierarchy "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU" File: /home/user/MiSTery/TG68K.C/TG68KdotC_Kernel.vhd Line: 372
+Info (12128): Elaborating entity "mfp" for hierarchy "mistery_top:guest|atarist_sdram:atarist|mfp:mfp" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 636
+Info (12128): Elaborating entity "mfp_timer" for hierarchy "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|mfp_timer:timer_a" File: /home/user/MiSTery/atarist/mfp.v Line: 168
+Info (12128): Elaborating entity "mfp_hbit16" for hierarchy "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|mfp_hbit16:irq_in_service_index" File: /home/user/MiSTery/atarist/mfp.v Line: 247
+Info (12128): Elaborating entity "mfp_srff16" for hierarchy "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|mfp_srff16:ipr_latch" File: /home/user/MiSTery/atarist/mfp.v Line: 405
+Info (12128): Elaborating entity "ikbd" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 658
+Info (12128): Elaborating entity "ps2" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|ps2:ps2" File: /home/user/MiSTery/ikbd/ikbd.sv Line: 50
+Warning (10036): Verilog HDL or VHDL warning at ps2.sv(249): object "mouse_badpackets" assigned a value but never read File: /home/user/MiSTery/ikbd/ps2.sv Line: 249
+Info (12128): Elaborating entity "HD63701V0_M6" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6" File: /home/user/MiSTery/ikbd/ikbd.sv Line: 109
+Info (12128): Elaborating entity "MCU_BIROM" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|MCU_BIROM:irom" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 41
+Warning (10030): Net "rom.data_a" at MCU_BIROM.v(8) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/ikbd/rom/MCU_BIROM.v Line: 8
+Warning (10030): Net "rom.waddr_a" at MCU_BIROM.v(8) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/ikbd/rom/MCU_BIROM.v Line: 8
+Warning (10030): Net "rom.we_a" at MCU_BIROM.v(8) has no driver or initial value, using a default initial value '0' File: /home/user/MiSTery/ikbd/rom/MCU_BIROM.v Line: 8
+Info (12128): Elaborating entity "HD63701_BIRAM" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIRAM:biram" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 47
+Info (12128): Elaborating entity "HD63701_IOPort" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_IOPort:iopt" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 53
+Info (12128): Elaborating entity "HD63701_SCI" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_SCI:sci" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 62
+Warning (10036): Verilog HDL or VHDL warning at HD63701.v(352): object "wu" assigned a value but never read File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 352
+Warning (10230): Verilog HDL assignment warning at HD63701.v(286): truncated value with size 32 to match size of target (8) File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 286
+Warning (10230): Verilog HDL assignment warning at HD63701.v(326): truncated value with size 32 to match size of target (12) File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 326
+Info (12128): Elaborating entity "HD63701_Timer" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Timer:timer" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 69
+Warning (10230): Verilog HDL assignment warning at HD63701.v(401): truncated value with size 32 to match size of target (17) File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 401
+Info (12128): Elaborating entity "HD63701_BIDSEL" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIDSEL:bidsel" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 83
+Info (12128): Elaborating entity "HD63701_Core" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core" File: /home/user/MiSTery/ikbd/hd63701/HD63701.v Line: 91
+Info (12128): Elaborating entity "HD63701_SEQ" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ" File: /home/user/MiSTery/ikbd/hd63701/HD63701_CORE.v Line: 33
+Warning (10230): Verilog HDL assignment warning at HD63701_SEQ.v(41): truncated value with size 32 to match size of target (8) File: /home/user/MiSTery/ikbd/hd63701/HD63701_SEQ.v Line: 41
+Warning (10175): Verilog HDL warning at HD63701_SEQ.v(103): ignoring unsupported system task File: /home/user/MiSTery/ikbd/hd63701/HD63701_SEQ.v Line: 103
+Info (12128): Elaborating entity "HD63701_MCROM" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr" File: /home/user/MiSTery/ikbd/hd63701/HD63701_SEQ.v Line: 131
+Warning (10230): Verilog HDL assignment warning at HD63701_MCROM.v(32): truncated value with size 32 to match size of target (24) File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 32
+Info (12128): Elaborating entity "HD63701_MCROM_S0" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S0:r0" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 21
+Info (12128): Elaborating entity "HD63701_MCROM_S1" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S1:r1" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 22
+Info (12128): Elaborating entity "HD63701_MCROM_S2" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S2:r2" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 23
+Info (12128): Elaborating entity "HD63701_MCROM_S3" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S3:r3" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 24
+Info (12128): Elaborating entity "HD63701_MCROM_S4" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S4:r4" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 25
+Info (12128): Elaborating entity "HD63701_MCROM_S5" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S5:r5" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 26
+Info (12128): Elaborating entity "HD63701_MCROM_S6" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S6:r6" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 27
+Info (12128): Elaborating entity "HD63701_MCROM_S7" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S7:r7" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 28
+Info (12128): Elaborating entity "HD63701_MCROM_S8" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S8:r8" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 29
+Info (12128): Elaborating entity "HD63701_MCROM_S9" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S9:r9" File: /home/user/MiSTery/ikbd/hd63701/HD63701_MCROM.v Line: 30
+Info (12128): Elaborating entity "HD63701_EXEC" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC" File: /home/user/MiSTery/ikbd/hd63701/HD63701_CORE.v Line: 36
+Warning (10036): Verilog HDL or VHDL warning at HD63701_EXEC.v(27): object "mcph" assigned a value but never read File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 27
+Info (12128): Elaborating entity "HD63701_DSEL13" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_DSEL13:sR0" File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 72
+Info (12128): Elaborating entity "HD63701_ALU" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_ALU:ALU" File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 95
+Info (12128): Elaborating entity "HD63701_DSEL8" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_DSEL8:sAB" File: /home/user/MiSTery/ikbd/hd63701/HD63701_EXEC.v Line: 109
+Info (12128): Elaborating entity "acia" for hierarchy "mistery_top:guest|atarist_sdram:atarist|acia:kbd_acia" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 681
+Info (12128): Elaborating entity "YM2149" for hierarchy "mistery_top:guest|atarist_sdram:atarist|YM2149:ym2149" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 753
+Info (12128): Elaborating entity "vol_table" for hierarchy "mistery_top:guest|atarist_sdram:atarist|YM2149:ym2149|vol_table:\VOLTABLE:u_vol_table" File: /home/user/MiSTery/atarist/YM2149.vhd Line: 664
+Info (12128): Elaborating entity "mste_ctrl" for hierarchy "mistery_top:guest|atarist_sdram:atarist|mste_ctrl:mste_ctrl" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 795
+Info (12128): Elaborating entity "stBlitter" for hierarchy "mistery_top:guest|atarist_sdram:atarist|stBlitter:stBlitter" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 865
+Warning (10230): Verilog HDL assignment warning at stBlitter.sv(65): truncated value with size 32 to match size of target (4) File: /home/user/MiSTery/atarist/stBlitter.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at stBlitter.sv(273): truncated value with size 32 to match size of target (16) File: /home/user/MiSTery/atarist/stBlitter.sv Line: 273
+Info (12128): Elaborating entity "bltControl" for hierarchy "mistery_top:guest|atarist_sdram:atarist|stBlitter:stBlitter|bltControl:bltControl" File: /home/user/MiSTery/atarist/stBlitter.sv Line: 281
+Info (12128): Elaborating entity "bltBusCtrl" for hierarchy "mistery_top:guest|atarist_sdram:atarist|stBlitter:stBlitter|bltBusCtrl:bltBusCtrl" File: /home/user/MiSTery/atarist/stBlitter.sv Line: 284
+Info (12128): Elaborating entity "bltCounters" for hierarchy "mistery_top:guest|atarist_sdram:atarist|stBlitter:stBlitter|bltCounters:bltCounters" File: /home/user/MiSTery/atarist/stBlitter.sv Line: 288
+Info (12128): Elaborating entity "bltScore" for hierarchy "mistery_top:guest|atarist_sdram:atarist|stBlitter:stBlitter|bltScore:bltScore" File: /home/user/MiSTery/atarist/stBlitter.sv Line: 295
+Info (12128): Elaborating entity "ste_joypad" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ste_joypad:ste_joypad0" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 889
+Info (12128): Elaborating entity "dma" for hierarchy "mistery_top:guest|atarist_sdram:atarist|dma:dma" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 992
+Info (12128): Elaborating entity "acsi" for hierarchy "mistery_top:guest|atarist_sdram:atarist|dma:dma|acsi:acsi" File: /home/user/MiSTery/atarist/dma.v Line: 191
+Info (12128): Elaborating entity "fdc1772" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 1039
+Info (10264): Verilog HDL Case Statement information at fdc1772.v(572): all case item expressions in this case statement are onehot File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 572
+Info (10264): Verilog HDL Case Statement information at fdc1772.v(610): all case item expressions in this case statement are onehot File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 610
+Info (12128): Elaborating entity "floppy" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|floppy:fdd[0].floppy" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 289
+Info (12128): Elaborating entity "fdc1772_dpram" for hierarchy "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|fdc1772_dpram:fifo" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 742
+Info (12128): Elaborating entity "ethernec" for hierarchy "mistery_top:guest|atarist_sdram:atarist|ethernec:ethernec" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 1070
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(89): object "imr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 89
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(91): object "bnry" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 91
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(92): object "dcr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 92
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(93): object "rcr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 93
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(94): object "tcr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 94
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(95): object "tpsr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 95
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(98): object "par" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 98
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(99): object "mar" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 99
+Warning (10036): Verilog HDL or VHDL warning at ethernec.v(100): object "rbcr" assigned a value but never read File: /home/user/MiSTery/atarist/ethernec.v Line: 100
+Info (10264): Verilog HDL Case Statement information at ethernec.v(263): all case item expressions in this case statement are onehot File: /home/user/MiSTery/atarist/ethernec.v Line: 263
+Info (12128): Elaborating entity "sdram" for hierarchy "mistery_top:guest|atarist_sdram:atarist|sdram:sdram" File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 1168
+Info (12128): Elaborating entity "substitute_mcu" for hierarchy "substitute_mcu:controller" File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 338
+Warning (10036): Verilog HDL or VHDL warning at substitute_mcu.vhd(188): object "flushcaches" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 188
+Warning (10036): Verilog HDL or VHDL warning at substitute_mcu.vhd(191): object "debug_req" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 191
+Warning (10541): VHDL Signal Declaration warning at substitute_mcu.vhd(192): used implicit default value for signal "debug_ack" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 192
+Warning (10036): Verilog HDL or VHDL warning at substitute_mcu.vhd(193): object "debug_fromcpu" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 193
+Warning (10541): VHDL Signal Declaration warning at substitute_mcu.vhd(194): used implicit default value for signal "debug_tocpu" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 194
+Warning (10036): Verilog HDL or VHDL warning at substitute_mcu.vhd(195): object "debug_wr" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 195
+Warning (10492): VHDL Process Statement warning at substitute_mcu.vhd(219): signal "reset_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 219
+Warning (10492): VHDL Process Statement warning at substitute_mcu.vhd(524): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 524
+Warning (10873): Using initial value X (don't care) for net "cpu_addr[1..0]" at substitute_mcu.vhd(174) File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 174
+Info (12128): Elaborating entity "simple_uart" for hierarchy "substitute_mcu:controller|simple_uart:\genuart:myuart" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 273
+Info (12128): Elaborating entity "io_ps2_com" for hierarchy "substitute_mcu:controller|io_ps2_com:mykeyboard" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 296
+Info (12128): Elaborating entity "spi_controller" for hierarchy "substitute_mcu:controller|spi_controller:spi" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 364
+Info (12128): Elaborating entity "timer_controller" for hierarchy "substitute_mcu:controller|timer_controller:mytimer" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 389
+Warning (10492): VHDL Process Statement warning at timer_controller.vhd(57): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/user/MiSTery/DeMiSTify/controller/timer_controller.vhd Line: 57
+Info (12128): Elaborating entity "interrupt_controller" for hierarchy "substitute_mcu:controller|interrupt_controller:intcontroller" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 409
+Info (12128): Elaborating entity "controller_rom" for hierarchy "substitute_mcu:controller|controller_rom:rom" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 427
+Info (12128): Elaborating entity "controller_rom1" for hierarchy "substitute_mcu:controller|controller_rom:rom|controller_rom1:rom1" File: /home/user/MiSTery/DeMiSTify/firmware/controller_rom.vhd Line: 41
+Info (12128): Elaborating entity "controller_rom2" for hierarchy "substitute_mcu:controller|controller_rom:rom|controller_rom2:rom2" File: /home/user/MiSTery/DeMiSTify/firmware/controller_rom.vhd Line: 56
+Info (12128): Elaborating entity "eightthirtytwo_cpu" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu" File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 470
+Warning (10631): VHDL Process Statement warning at eightthirtytwo_cpu.vhd(536): inferring latch(es) for signal or variable "thread2", which holds its previous value in one or more paths through the process File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 536
+Warning (10873): Using initial value X (don't care) for net "debug_q" at eightthirtytwo_cpu.vhd(52) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 52
+Warning (10873): Using initial value X (don't care) for net "regfile2.flag_cond" at eightthirtytwo_cpu.vhd(94) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 94
+Warning (10873): Using initial value X (don't care) for net "debug_req" at eightthirtytwo_cpu.vhd(53) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 53
+Warning (10873): Using initial value X (don't care) for net "debug_wr" at eightthirtytwo_cpu.vhd(54) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 54
+Info (10041): Inferred latch for "thread2.setpc" at eightthirtytwo_cpu.vhd(536) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 536
+Info (12128): Elaborating entity "eightthirtytwo_fetchloadstore" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_fetchloadstore:\genlsfnodual:fetchloadstore" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 329
+Warning (10036): Verilog HDL or VHDL warning at eightthirtytwo_fetchloadstore.vhd(94): object "opcodebuffer2_valid" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 94
+Warning (10541): VHDL Signal Declaration warning at eightthirtytwo_fetchloadstore.vhd(98): used implicit default value for signal "fetch2_addr" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 98
+Warning (10036): Verilog HDL or VHDL warning at eightthirtytwo_fetchloadstore.vhd(101): object "fetch2_word" assigned a value but never read File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 101
+Warning (10873): Using initial value X (don't care) for net "opcode2" at eightthirtytwo_fetchloadstore.vhd(53) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 53
+Warning (10873): Using initial value X (don't care) for net "opcode2_valid" at eightthirtytwo_fetchloadstore.vhd(54) File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 54
+Info (12128): Elaborating entity "eightthirtytwo_aligner_le" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_fetchloadstore:\genlsfnodual:fetchloadstore|eightthirtytwo_aligner_le:\align_le:aligner" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_fetchloadstore.vhd Line: 510
+Info (12128): Elaborating entity "eightthirtytwo_decode" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_decode:decoder" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 376
+Info (12128): Elaborating entity "eightthirtytwo_alu" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_alu:alu" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 401
+Info (12128): Elaborating entity "eightthirtytwo_shifter" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_alu:alu|eightthirtytwo_shifter:shifter" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 229
+Info (12128): Elaborating entity "eightthirtytwo_hazard" for hierarchy "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_hazard:hazard1" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_cpu.vhd Line: 442
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "mistery_top:guest|SPI_DO" feeding internal logic into a wire File: /home/user/MiSTery/mistery_top.sv Line: 36
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|regfile_rtl_0"
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|regfile_rtl_1"
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_in_fifo|fifo_rtl_0"
+Warning (276027): Inferred dual-clock RAM node "mistery_top:guest|mist_video:mist_video|osd:osd|osd_buffer_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_out_fifo|fifo_rtl_0"
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|io_fifo:parallel_out_fifo|fifo_rtl_0"
+Info (276024): Pass-through logic not created for RAM node "mistery_top:guest|io_fifo:serial_out_fifo|fifo_rtl_0"
+Warning (276027): Inferred dual-clock RAM node "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIRAM:biram|bimem_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info (276014): Found 9 instances of uninferred RAM logic
+    Info (276004): RAM logic "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|palette_r" is uninferred due to inappropriate RAM size File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 84
+    Info (276004): RAM logic "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|palette_b" is uninferred due to inappropriate RAM size File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 86
+    Info (276004): RAM logic "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|palette_g" is uninferred due to inappropriate RAM size File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 85
+    Info (276004): RAM logic "mistery_top:guest|atarist_sdram:atarist|rtc_bank1" is uninferred due to inappropriate RAM size File: /home/user/MiSTery/atarist/atarist_sdram.sv Line: 904
+    Info (276007): RAM logic "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_in_fifo|fifo" is uninferred due to asynchronous read logic File: /home/user/MiSTery/atarist/io_fifo.v Line: 50
+    Info (276004): RAM logic "mistery_top:guest|atarist_sdram:atarist|gstshifter:gstshifter|fifo" is uninferred due to inappropriate RAM size File: /home/user/MiSTery/gstmcu/hdl/gstshifter.v Line: 421
+    Info (276007): RAM logic "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_out_fifo|fifo" is uninferred due to asynchronous read logic File: /home/user/MiSTery/atarist/io_fifo.v Line: 50
+    Info (276007): RAM logic "mistery_top:guest|io_fifo:parallel_out_fifo|fifo" is uninferred due to asynchronous read logic File: /home/user/MiSTery/atarist/io_fifo.v Line: 50
+    Info (276007): RAM logic "mistery_top:guest|io_fifo:serial_out_fifo|fifo" is uninferred due to asynchronous read logic File: /home/user/MiSTery/atarist/io_fifo.v Line: 50
+Info (19000): Inferred 19 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|regfile_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_TG68KdotC_Kernel_9510782e.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|regfile_rtl_1" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_TG68KdotC_Kernel_9510782e.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|dma:dma|fifo_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 16
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 16
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_in_fifo|fifo_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom|nRam_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 68
+        Info (286033): Parameter WIDTHAD_A set to 9
+        Info (286033): Parameter NUMWORDS_A set to 336
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_nanoRom_eb8e7439.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|fdc1772_dpram:fifo|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to BIDIR_DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter WIDTHAD_B set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter NUMWORDS_B set to 1024
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_REG_B set to CLOCK0
+        Info (286033): Parameter WRCONTROL_WRADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "substitute_mcu:controller|controller_rom:rom|controller_rom2:rom2|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 2048
+        Info (286033): Parameter WIDTH_BYTEENA_A set to 4
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_controller_rom2_f950eaf0.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "substitute_mcu:controller|controller_rom:rom|controller_rom1:rom1|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to SINGLE_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 2048
+        Info (286033): Parameter WIDTH_BYTEENA_A set to 4
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_controller_rom1_abf1d3d7.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uRom:uRom|uRam_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 17
+        Info (286033): Parameter WIDTHAD_A set to 10
+        Info (286033): Parameter NUMWORDS_A set to 1024
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_uRom_41e27d.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|YM2149:ym2149|vol_table:\VOLTABLE:u_vol_table|ROM_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to BIDIR_DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 10
+        Info (286033): Parameter WIDTH_B set to 10
+        Info (286033): Parameter WIDTHAD_A set to 12
+        Info (286033): Parameter WIDTHAD_B set to 12
+        Info (286033): Parameter NUMWORDS_A set to 4096
+        Info (286033): Parameter NUMWORDS_B set to 4096
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_REG_B set to CLOCK0
+        Info (286033): Parameter WRCONTROL_WRADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_vol_table_99730682.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|mist_video:mist_video|osd:osd|osd_buffer_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 2048
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 11
+        Info (286033): Parameter NUMWORDS_B set to 2048
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_out_fifo|fifo_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|io_fifo:parallel_out_fifo|fifo_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|io_fifo:serial_out_fifo|fifo_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 4
+        Info (286033): Parameter NUMWORDS_A set to 16
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 4
+        Info (286033): Parameter NUMWORDS_B set to 16
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|mist_video:mist_video|scandoubler:scandoubler|sd_buffer_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 12
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 2048
+        Info (286033): Parameter WIDTH_B set to 12
+        Info (286033): Parameter WIDTHAD_B set to 11
+        Info (286033): Parameter NUMWORDS_B set to 2048
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S0:r0|Ram0_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 24
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.rom0_HD63701_MCROM_S0_1ba95fa0.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIRAM:biram|bimem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 7
+        Info (286033): Parameter NUMWORDS_A set to 128
+        Info (286033): Parameter WIDTH_B set to 8
+        Info (286033): Parameter WIDTHAD_B set to 7
+        Info (286033): Parameter NUMWORDS_B set to 128
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|MCU_BIROM:irom|rom_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 8
+        Info (286033): Parameter WIDTHAD_A set to 12
+        Info (286033): Parameter NUMWORDS_A set to 4096
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/MiSTery_neptuno.ram0_MCU_BIROM_385b34c0.hdl.mif
+    Info (276031): Inferred altsyncram megafunction from the following design logic: "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S1:r1|WideOr0_rtl_0"
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 91
+        Info (286033): Parameter WIDTHAD_A set to 8
+        Info (286033): Parameter NUMWORDS_A set to 256
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter RAM_BLOCK_TYPE set to AUTO
+        Info (286033): Parameter INIT_FILE set to MiSTery_neptuno.neptuno_top0.rtl.mif
+Info (278001): Inferred 10 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|Mult0" File: /opt/intelFPGA_lite/17.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_ALU:ALU|Mult0" File: /home/user/MiSTery/ikbd/hd63701/HD63701_ALU.v Line: 35
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult2" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 65
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult1" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 64
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult4" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 69
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_alu:alu|Mult0" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 124
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult5" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 74
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult0" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 63
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|Mult3" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 68
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|Mult0" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 121
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "4"
+    Info (12134): Parameter "NUMWORDS_A" = "16"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "4"
+    Info (12134): Parameter "NUMWORDS_B" = "16"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_TG68KdotC_Kernel_9510782e.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_s3k1.tdf
+    Info (12023): Found entity 1: altsyncram_s3k1 File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|dma:dma|altsyncram:fifo_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|dma:dma|altsyncram:fifo_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "16"
+    Info (12134): Parameter "WIDTHAD_A" = "4"
+    Info (12134): Parameter "NUMWORDS_A" = "16"
+    Info (12134): Parameter "WIDTH_B" = "16"
+    Info (12134): Parameter "WIDTHAD_B" = "4"
+    Info (12134): Parameter "NUMWORDS_B" = "16"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ksg1.tdf
+    Info (12023): Found entity 1: altsyncram_ksg1 File: /home/user/MiSTery/neptuno/db/altsyncram_ksg1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_in_fifo|altsyncram:fifo_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|mfp:mfp|io_fifo:mfp_in_fifo|altsyncram:fifo_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "4"
+    Info (12134): Parameter "NUMWORDS_A" = "16"
+    Info (12134): Parameter "WIDTH_B" = "8"
+    Info (12134): Parameter "WIDTHAD_B" = "4"
+    Info (12134): Parameter "NUMWORDS_B" = "16"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u9c1.tdf
+    Info (12023): Found entity 1: altsyncram_u9c1 File: /home/user/MiSTery/neptuno/db/altsyncram_u9c1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom|altsyncram:nRam_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom|altsyncram:nRam_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "68"
+    Info (12134): Parameter "WIDTHAD_A" = "9"
+    Info (12134): Parameter "NUMWORDS_A" = "336"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_nanoRom_eb8e7439.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6t71.tdf
+    Info (12023): Found entity 1: altsyncram_6t71 File: /home/user/MiSTery/neptuno/db/altsyncram_6t71.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|fdc1772_dpram:fifo|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|fdc1772_dpram:fifo|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTH_B" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "WIDTHAD_B" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "NUMWORDS_B" = "1024"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_REG_B" = "CLOCK0"
+    Info (12134): Parameter "WRCONTROL_WRADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_29r1.tdf
+    Info (12023): Found entity 1: altsyncram_29r1 File: /home/user/MiSTery/neptuno/db/altsyncram_29r1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "substitute_mcu:controller|controller_rom:rom|controller_rom2:rom2|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "substitute_mcu:controller|controller_rom:rom|controller_rom2:rom2|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "SINGLE_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "2048"
+    Info (12134): Parameter "WIDTH_BYTEENA_A" = "4"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_controller_rom2_f950eaf0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_khd1.tdf
+    Info (12023): Found entity 1: altsyncram_khd1 File: /home/user/MiSTery/neptuno/db/altsyncram_khd1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "substitute_mcu:controller|controller_rom:rom|controller_rom1:rom1|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "substitute_mcu:controller|controller_rom:rom|controller_rom1:rom1|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "SINGLE_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "2048"
+    Info (12134): Parameter "WIDTH_BYTEENA_A" = "4"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_controller_rom1_abf1d3d7.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vid1.tdf
+    Info (12023): Found entity 1: altsyncram_vid1 File: /home/user/MiSTery/neptuno/db/altsyncram_vid1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uRom:uRom|altsyncram:uRam_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|uRom:uRom|altsyncram:uRam_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "17"
+    Info (12134): Parameter "WIDTHAD_A" = "10"
+    Info (12134): Parameter "NUMWORDS_A" = "1024"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_uRom_41e27d.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_og71.tdf
+    Info (12023): Found entity 1: altsyncram_og71 File: /home/user/MiSTery/neptuno/db/altsyncram_og71.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|YM2149:ym2149|vol_table:\VOLTABLE:u_vol_table|altsyncram:ROM_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|YM2149:ym2149|vol_table:\VOLTABLE:u_vol_table|altsyncram:ROM_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "10"
+    Info (12134): Parameter "WIDTH_B" = "10"
+    Info (12134): Parameter "WIDTHAD_A" = "12"
+    Info (12134): Parameter "WIDTHAD_B" = "12"
+    Info (12134): Parameter "NUMWORDS_A" = "4096"
+    Info (12134): Parameter "NUMWORDS_B" = "4096"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_REG_B" = "CLOCK0"
+    Info (12134): Parameter "WRCONTROL_WRADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_vol_table_99730682.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_otp1.tdf
+    Info (12023): Found entity 1: altsyncram_otp1 File: /home/user/MiSTery/neptuno/db/altsyncram_otp1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|osd:osd|altsyncram:osd_buffer_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|osd:osd|altsyncram:osd_buffer_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "2048"
+    Info (12134): Parameter "WIDTH_B" = "8"
+    Info (12134): Parameter "WIDTHAD_B" = "11"
+    Info (12134): Parameter "NUMWORDS_B" = "2048"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dle1.tdf
+    Info (12023): Found entity 1: altsyncram_dle1 File: /home/user/MiSTery/neptuno/db/altsyncram_dle1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|scandoubler:scandoubler|altsyncram:sd_buffer_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|scandoubler:scandoubler|altsyncram:sd_buffer_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "12"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "2048"
+    Info (12134): Parameter "WIDTH_B" = "12"
+    Info (12134): Parameter "WIDTHAD_B" = "11"
+    Info (12134): Parameter "NUMWORDS_B" = "2048"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ulc1.tdf
+    Info (12023): Found entity 1: altsyncram_ulc1 File: /home/user/MiSTery/neptuno/db/altsyncram_ulc1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S0:r0|altsyncram:Ram0_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S0:r0|altsyncram:Ram0_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "24"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.rom0_HD63701_MCROM_S0_1ba95fa0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_sg81.tdf
+    Info (12023): Found entity 1: altsyncram_sg81 File: /home/user/MiSTery/neptuno/db/altsyncram_sg81.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIRAM:biram|altsyncram:bimem_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_BIRAM:biram|altsyncram:bimem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "7"
+    Info (12134): Parameter "NUMWORDS_A" = "128"
+    Info (12134): Parameter "WIDTH_B" = "8"
+    Info (12134): Parameter "WIDTHAD_B" = "7"
+    Info (12134): Parameter "NUMWORDS_B" = "128"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qpd1.tdf
+    Info (12023): Found entity 1: altsyncram_qpd1 File: /home/user/MiSTery/neptuno/db/altsyncram_qpd1.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|MCU_BIROM:irom|altsyncram:rom_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|MCU_BIROM:irom|altsyncram:rom_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "8"
+    Info (12134): Parameter "WIDTHAD_A" = "12"
+    Info (12134): Parameter "NUMWORDS_A" = "4096"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/MiSTery_neptuno.ram0_MCU_BIROM_385b34c0.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_l281.tdf
+    Info (12023): Found entity 1: altsyncram_l281 File: /home/user/MiSTery/neptuno/db/altsyncram_l281.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S1:r1|altsyncram:WideOr0_rtl_0"
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_SEQ:SEQ|HD63701_MCROM:mcr|HD63701_MCROM_S1:r1|altsyncram:WideOr0_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "91"
+    Info (12134): Parameter "WIDTHAD_A" = "8"
+    Info (12134): Parameter "NUMWORDS_A" = "256"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info (12134): Parameter "INIT_FILE" = "MiSTery_neptuno.neptuno_top0.rtl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pv01.tdf
+    Info (12023): Found entity 1: altsyncram_pv01 File: /home/user/MiSTery/neptuno/db/altsyncram_pv01.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0" File: /opt/intelFPGA_lite/17.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0" with the following parameter: File: /opt/intelFPGA_lite/17.1/quartus/libraries/vhdl/synopsys/ieee/syn_arit.vhd Line: 687
+    Info (12134): Parameter "LPM_WIDTHA" = "33"
+    Info (12134): Parameter "LPM_WIDTHB" = "33"
+    Info (12134): Parameter "LPM_WIDTHP" = "66"
+    Info (12134): Parameter "LPM_WIDTHR" = "66"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_86t.tdf
+    Info (12023): Found entity 1: mult_86t File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 30
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_ALU:ALU|lpm_mult:Mult0" File: /home/user/MiSTery/ikbd/hd63701/HD63701_ALU.v Line: 35
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|ikbd:ikbd|HD63701V0_M6:HD63701V0_M6|HD63701_Core:core|HD63701_EXEC:EXEC|HD63701_ALU:ALU|lpm_mult:Mult0" with the following parameter: File: /home/user/MiSTery/ikbd/hd63701/HD63701_ALU.v Line: 35
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_7dt.tdf
+    Info (12023): Found entity 1: mult_7dt File: /home/user/MiSTery/neptuno/db/mult_7dt.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 65
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 65
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "11"
+    Info (12134): Parameter "LPM_WIDTHR" = "11"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2|multcore:mult_core", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_bfh.tdf
+    Info (12023): Found entity 1: add_sub_bfh File: /home/user/MiSTery/neptuno/db/add_sub_bfh.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2|altshift:external_latency_ffs", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult2" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 64
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 64
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "14"
+    Info (12134): Parameter "LPM_WIDTHR" = "14"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lgh.tdf
+    Info (12023): Found entity 1: add_sub_lgh File: /home/user/MiSTery/neptuno/db/add_sub_lgh.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult1" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 69
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 69
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "13"
+    Info (12134): Parameter "LPM_WIDTHR" = "13"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4|multcore:mult_core", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
+    Info (12023): Found entity 1: add_sub_kgh File: /home/user/MiSTery/neptuno/db/add_sub_kgh.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4|altshift:external_latency_ffs", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult4" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+Info (12130): Elaborated megafunction instantiation "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_alu:alu|lpm_mult:Mult0" File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 124
+Info (12133): Instantiated megafunction "substitute_mcu:controller|eightthirtytwo_cpu:cpu|eightthirtytwo_alu:alu|lpm_mult:Mult0" with the following parameter: File: /home/user/MiSTery/DeMiSTify/EightThirtyTwo/RTL/eightthirtytwo_alu.vhd Line: 124
+    Info (12134): Parameter "LPM_WIDTHA" = "33"
+    Info (12134): Parameter "LPM_WIDTHB" = "33"
+    Info (12134): Parameter "LPM_WIDTHP" = "66"
+    Info (12134): Parameter "LPM_WIDTHR" = "66"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult5" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 74
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult5" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 74
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "13"
+    Info (12134): Parameter "LPM_WIDTHR" = "13"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult0" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 63
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult0" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 63
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "13"
+    Info (12134): Parameter "LPM_WIDTHR" = "13"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 68
+Info (12133): Instantiated megafunction "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" with the following parameter: File: /home/user/MiSTery/mist/rgb2ypbpr.v Line: 68
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
+    Info (12134): Parameter "LPM_WIDTHB" = "6"
+    Info (12134): Parameter "LPM_WIDTHP" = "12"
+    Info (12134): Parameter "LPM_WIDTHR" = "12"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3|multcore:mult_core", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_jgh.tdf
+    Info (12023): Found entity 1: add_sub_jgh File: /home/user/MiSTery/neptuno/db/add_sub_jgh.tdf Line: 22
+Info (12131): Elaborated megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3|altshift:external_latency_ffs", which is child of megafunction instantiation "mistery_top:guest|mist_video:mist_video|RGBtoYPbPr:rgb2ypbpr|lpm_mult:Mult3" File: /opt/intelFPGA_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+Info (12130): Elaborated megafunction instantiation "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|lpm_mult:Mult0" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 121
+Info (12133): Instantiated megafunction "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|lpm_mult:Mult0" with the following parameter: File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 121
+    Info (12134): Parameter "LPM_WIDTHA" = "5"
+    Info (12134): Parameter "LPM_WIDTHB" = "7"
+    Info (12134): Parameter "LPM_WIDTHP" = "12"
+    Info (12134): Parameter "LPM_WIDTHR" = "12"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_2at.tdf
+    Info (12023): Found entity 1: mult_2at File: /home/user/MiSTery/neptuno/db/mult_2at.tdf Line: 28
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom|altsyncram:nRam_rtl_0|altsyncram_6t71:auto_generated|ram_block1a2" File: /home/user/MiSTery/neptuno/db/altsyncram_6t71.tdf Line: 76
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|fx68k:fx68k|nanoRom:nanoRom|altsyncram:nRam_rtl_0|altsyncram_6t71:auto_generated|ram_block1a23" File: /home/user/MiSTery/neptuno/db/altsyncram_6t71.tdf Line: 517
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a0" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 38
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a1" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 68
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a2" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 98
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a3" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 128
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a4" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 158
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a5" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 188
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a6" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 218
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a7" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 248
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a8" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 278
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a9" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 308
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a10" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 338
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a11" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 368
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a12" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 398
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a13" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 428
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a14" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 458
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a15" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 488
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a16" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 518
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a17" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 548
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a18" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 578
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a19" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 608
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a20" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 638
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a21" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 668
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a22" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 698
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a23" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 728
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a24" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 758
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a25" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 788
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a26" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 818
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a27" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 848
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a28" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 878
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a29" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 908
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a30" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 938
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_1|altsyncram_s3k1:auto_generated|ram_block1a31" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 968
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a0" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 38
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a1" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 68
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a2" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 98
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a3" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 128
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a4" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 158
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a5" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 188
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a6" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 218
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a7" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 248
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a8" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 278
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a9" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 308
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a10" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 338
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a11" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 368
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a12" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 398
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a13" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 428
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a14" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 458
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a15" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 488
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a16" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 518
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a17" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 548
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a18" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 578
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a19" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 608
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a20" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 638
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a21" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 668
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a22" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 698
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a23" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 728
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a24" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 758
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a25" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 788
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a26" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 818
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a27" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 848
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a28" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 878
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a29" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 908
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a30" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 938
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|altsyncram:regfile_rtl_0|altsyncram_s3k1:auto_generated|ram_block1a31" File: /home/user/MiSTery/neptuno/db/altsyncram_s3k1.tdf Line: 968
+    Warning (14285): Synthesized away the following DSP element node(s):
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult1" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 39
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult3" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 48
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult5" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 57
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult7" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 66
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|w589w[0]" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 75
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_out4" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 80
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_out6" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 85
+        Warning (14320): Synthesized away node "mistery_top:guest|atarist_sdram:atarist|tg68k:tg68k|TG68KdotC_Kernel:tg68k|TG68K_ALU:ALU|lpm_mult:Mult0|mult_86t:auto_generated|mac_out8" File: /home/user/MiSTery/neptuno/db/mult_86t.tdf Line: 90
+Warning (12241): 26 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 207 buffer(s)
+    Info (13019): Ignored 207 SOFT buffer(s)
+Info (13000): Registers with preset signals will power-up high File: /home/user/MiSTery/DeMiSTify/controller/substitute_mcu.vhd Line: 524
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DRAM_CKE" is stuck at VCC File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 13
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 14
+    Warning (13410): Pin "joyP7_o" is stuck at VCC File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 40
+    Warning (13410): Pin "stm_rst_o" is stuck at GND File: /home/user/MiSTery/neptuno/neptuno_top.vhd Line: 52
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1890 registers lost all their fanouts during netlist optimizations.
+Info (17017): Removed the following redundant logic cells
+    Info (17048): Logic cell "mistery_top:guest|mist_video:mist_video|osd:osd|v_osd_start[5]~18"
+    Info (17048): Logic cell "mistery_top:guest|mist_video:mist_video|osd:osd|v_osd_start[3]~22"
+    Info (17048): Logic cell "mistery_top:guest|mist_video:mist_video|osd:osd|v_osd_start[2]~24"
+    Info (17048): Logic cell "mistery_top:guest|mist_video:mist_video|osd:osd|v_osd_start[1]~26"
+    Info (17048): Logic cell "mistery_top:guest|mist_video:mist_video|osd:osd|v_osd_start[0]~28"
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|status[3]" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 917
+    Info (17048): Logic cell "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|status[4]" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 917
+    Info (17048): Logic cell "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|status[7]" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 917
+    Info (17048): Logic cell "mistery_top:guest|atarist_sdram:atarist|fdc1772:fdc1772|status[0]" File: /home/user/MiSTery/fdc1772/fdc1772.v Line: 917
+Info (144001): Generated suppressed messages file /home/user/MiSTery/neptuno/output_files/MiSTery_neptuno.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 4 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
+Warning (15899): PLL "mistery_top:guest|clock:clock|altpll:altpll_component|clock_altpll:auto_generated|pll1" has parameters clk4_multiply_by and clk4_divide_by specified but port CLK[4] is not connected File: /home/user/MiSTery/neptuno/db/clock_altpll.v Line: 50
+Error (15658): inclk[1] port of Clock Control Block "mistery_top:guest|vidclkcntrl:vidclkcntrl|vidclkcntrl_altclkctrl_uhi:vidclkcntrl_altclkctrl_uhi_component|clkctrl1" cannot be used when clkselect port is not used or is a constant File: /home/user/MiSTery/neptuno/db/vidclkcntrl.v Line: 66
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 234 warnings
+    Error: Peak virtual memory: 1291 megabytes
+    Error: Processing ended: Mon Sep 13 11:07:52 2021
+    Error: Elapsed time: 00:02:07
+    Error: Total CPU time (on all processors): 00:02:05
+Error (293001): Quartus Prime Full Compilation was unsuccessful. 3 errors, 234 warnings
+Error (23031): Evaluation of Tcl script ..//DeMiSTify/Scripts/compile.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 8 errors, 234 warnings
+    Error: Peak virtual memory: 795 megabytes
+    Error: Processing ended: Mon Sep 13 11:07:53 2021
+    Error: Elapsed time: 00:02:09
+    Error: Total CPU time (on all processors): 00:02:07
